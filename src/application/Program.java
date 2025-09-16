@@ -1,15 +1,15 @@
 package application;
 
+import gameboard.Board;
+import gameboard.Piece;
 import gameboard.Position;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
-		Position position = new Position(10, 15);
-		
-		System.out.println(position);
-
+		Board board = new Board(8, 8);
+		Piece pieces = new Piece(board);
 	}
 
 }
