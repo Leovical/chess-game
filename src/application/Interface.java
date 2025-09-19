@@ -1,6 +1,8 @@
 package application;
 
+import java.util.Scanner;
 import chess.ChessPiece;
+import chess.ChessPosition;
 import chess.Color;
 
 public class Interface {
@@ -25,7 +27,7 @@ public class Interface {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
-
+	
 	public static void printBoard(ChessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
