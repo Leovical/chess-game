@@ -44,7 +44,7 @@ public class Interface {
 			return new ChessPosition(column, row);
 		}
 		catch(RuntimeException e) {
-			throw new InputMismatchException("Error. Valid values are from a1 to h8, u dumb!");
+			throw new InputMismatchException("\nError. Valid values are from a1 to h8, u dumb!");
 		}
 	}
 	
