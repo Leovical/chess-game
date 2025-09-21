@@ -60,6 +60,9 @@ public class Interface {
 		System.out.println();
 		System.out.println("TURN : " + chessMatch.getTurn());
 		System.out.println("Waiting player: " + chessMatch.getCurrentPLayer());
+		if(chessMatch.getCheck()) {
+			System.out.println("\n--- CHECK ---");
+		}
 	}
 	
 	public static void printBoard(ChessPiece[][] pieces) {
