@@ -59,9 +59,16 @@ public class Interface {
 		printCapturedPieces(captured);
 		System.out.println();
 		System.out.println("TURN : " + chessMatch.getTurn());
-		System.out.println("Waiting player: " + chessMatch.getCurrentPLayer());
-		if(chessMatch.getCheck()) {
-			System.out.println("\n--- CHECK ---");
+		
+		if(!chessMatch.getCheckMate()) {
+			System.out.println("Waiting player: " + chessMatch.getCurrentPLayer());
+			if(chessMatch.getCheck()) {
+				System.out.println("\n--- CHECK ---");
+			}
+		}
+		else {
+			System.out.println("\n--- CHECKMATE ---");
+			System.out.println("\nWinner: " + chessMatch.getCurrentPLayer());
 		}
 	}
 	
